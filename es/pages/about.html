@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="es" class="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nosotros | TikElite</title>
+    <meta name="description" content="Conoce más sobre TikElite, tu herramienta gratuita favorita para descargar videos de TikTok sin marcas de agua en alta definición." />
+    <link rel="canonical" href="https://example.com/es/pages/about.html" />
+    
+    <link rel="alternate" hreflang="x-default" href="https://example.com/pages/about.html" />
+    <link rel="alternate" hreflang="en" href="https://example.com/pages/about.html" />
+    <link rel="alternate" hreflang="ar" href="https://example.com/ar/pages/about.html" />
+    <link rel="alternate" hreflang="es" href="https://example.com/es/pages/about.html" />
+    <link rel="alternate" hreflang="fr" href="https://example.com/fr/pages/about.html" />
+    <link rel="alternate" hreflang="de" href="https://example.com/de/pages/about.html" />
+    <link rel="alternate" hreflang="pt" href="https://example.com/pt/pages/about.html" />
+    <link rel="alternate" hreflang="ru" href="https://example.com/ru/pages/about.html" />
+    <link rel="alternate" hreflang="hi" href="https://example.com/hi/pages/about.html" />
+    <link rel="alternate" hreflang="ja" href="https://example.com/ja/pages/about.html" />
+    <link rel="alternate" hreflang="zh" href="https://example.com/zh/pages/about.html" />
+    <link rel="alternate" hreflang="ko" href="https://example.com/ko/pages/about.html" />
+    
+    <style>
+        :root { --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); }
+        html.light { --bg-color: #f9fafb; --grad-1: #a8b2ff; --grad-2: #c6a8ff; --grad-3: #ffb3b8; --glass-bg: rgba(255, 255, 255, 0.4); --glass-border: rgba(255, 255, 255, 0.6); --card-bg: rgba(255, 255, 255, 0.65); --text-primary: #111827; --text-secondary: #4b5563; --accent-color: #4f46e5; --header-text: white; }
+        html.dark { --bg-color: #0f172a; --grad-1: #1e293b; --grad-2: #334155; --grad-3: #475569; --glass-bg: rgba(30, 41, 59, 0.3); --glass-border: rgba(255, 255, 255, 0.1); --card-bg: rgba(30, 41, 59, 0.5); --text-primary: #f8fafc; --text-secondary: #cbd5e1; --accent-color: #6366f1; --header-text: white; }
+        @keyframes fade-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes gradient-animation { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        body { margin: 0; font-family: var(--font-family); color: var(--text-primary); background-color: var(--bg-color); transition: color 0.3s, background-color 0.3s; padding: 1rem; padding-top: 80px; min-height: 100vh; box-sizing: border-box; }
+        body::before { content: ''; position: fixed; top: 0; left: 0; right: 0; height: 400px; z-index: -2; background: linear-gradient(-45deg, var(--grad-1), var(--grad-2), var(--grad-3)); background-size: 400% 400%; animation: gradient-animation 20s ease infinite; transition: background 0.5s; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .page-header { text-align: center; margin: 3rem 0; animation: fade-in 0.6s backwards; }
+        h1 { font-size: clamp(2.2rem, 6vw, 3.5rem); font-weight: 800; margin: 0 0 0.5rem 0; line-height: 1.2; }
+        .sticky-header { position: fixed; top: 0; left: 0; right: 0; padding: 0 1rem; height: 70px; z-index: 1000; display: flex; align-items: center; justify-content: space-between; background: linear-gradient(135deg, #4f46e5, #a855f7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { font-size: 1.5rem; font-weight: 700; text-decoration: none; color: var(--header-text); }
+        .nav-container { display: flex; align-items: center; gap: 1rem; }
+        .nav-links { display: flex; align-items: center; gap: 1.5rem; }
+        .nav-links a { text-decoration: none; color: rgba(255,255,255,0.8); font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: white; }
+        .theme-switcher { position: relative; }
+        #theme-toggle { display: none; }
+        #theme-toggle + label { cursor: pointer; font-size: 1.5rem; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: rgba(255,255,255,0.8); transition: all 0.3s; }
+        .dark #sun-icon { display: none; } .light #moon-icon { display: none; }
+        .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; }
+        .menu-toggle .hamburger { display: block; width: 24px; height: 2px; background: white; position: relative; transition: all 0.3s; }
+        .menu-toggle .hamburger::before, .menu-toggle .hamburger::after { content: ''; position: absolute; left: 0; width: 24px; height: 2px; background: white; transition: all 0.3s; }
+        .menu-toggle .hamburger::before { top: -8px; }
+        .menu-toggle .hamburger::after { bottom: -8px; }
+        .content-card { background: var(--card-bg); border: 1px solid var(--glass-border); backdrop-filter: blur(16px); border-radius: 1.5rem; padding: 2rem; box-shadow: var(--shadow-lg); transition: background 0.3s, border 0.3s; animation: fade-in 0.5s; text-align: left; }
+        .content-card h2 { font-size: 1.8rem; margin-top: 0; }
+        .content-card p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem; }
+        .content-card a { color: var(--accent-color); text-decoration: none; font-weight: 500; }
+        footer { text-align: center; margin-top: 4rem; padding: 3rem 1rem 2rem 1rem; font-size: 0.9rem; background: linear-gradient(135deg, #4338ca, #7e22ce, #be185d); color: #e5e7eb; border-radius: 1.5rem 1.5rem 0 0; box-shadow: 0 -5px 15px rgba(0,0,0,0.1); }
+        .footer-content { max-width: 900px; margin: 0 auto 2rem auto; text-align: left; line-height: 1.7; color: #d1d5db; }
+        .footer-nav { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; }
+        .footer-nav a { color: #f9fafb; text-decoration: none; font-weight: 500; }
+        #periodic-ad-overlay { position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.85); z-index: 10000; display: flex; align-items: center; justify-content: center; animation: fade-in 0.3s; }
+        .close-ad-btn { position: absolute; top: -15px; right: -15px; width: 40px; height: 40px; border-radius: 50%; border: none; background: white; color: #333; font-size: 2rem; font-weight: bold; cursor: pointer; line-height: 40px; text-align: center; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 10001; }
+        [hidden] { display: none !important; }
+        @media (max-width: 768px) { .menu-toggle { display: block; } .nav-links { position: fixed; top: 70px; right: 0; width: 250px; height: calc(100vh - 70px); background: #39339a; flex-direction: column; align-items: flex-start; padding: 1.5rem; transform: translateX(100%); transition: transform 0.3s ease-in-out; gap: 1rem; } .nav-links.active { transform: translateX(0); } }
+    </style>
+</head>
+<body class="">
+    <header class="sticky-header">
+        <a href="/es/" class="logo">TikElite</a>
+        <div class="nav-container">
+            <nav class="nav-links" id="nav-links">
+                <a href="/es/download/stories.html">Descargar Historias de TikTok</a>
+                <a href="/es/download/mp3.html">Descargar MP3 de TikTok</a>
+            </nav>
+            <div class="theme-switcher">
+                <input type="checkbox" id="theme-toggle" aria-label="Cambiar Tema">
+                <label for="theme-toggle" title="Cambiar Tema"><svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg><svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></label>
+            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menú"><span class="hamburger"></span></button>
+        </div>
+    </header>
+    
+    <div class="container">
+        <header class="page-header">
+            <h1>Sobre TikElite</h1>
+        </header>
+
+        <main class="content-card">
+            <h2>Nuestra Misión</h2>
+            <p>En TikElite, nuestra misión es simple: proporcionar la herramienta más rápida, confiable y fácil de usar para descargar contenido de TikTok. Creemos que todos deberían tener la capacidad de guardar sus momentos, sonidos e historias favoritas de TikTok para uso personal, ya sea para ver sin conexión, para proyectos creativos o simplemente para mantener un archivo personal.</p>
+
+            <h2>Por Qué Creamos Esto</h2>
+            <p>Nosotros mismos somos creadores y consumidores de contenido apasionados. Notamos que muchos de los descargadores de TikTok existentes eran lentos, estaban llenos de anuncios invasivos o requerían la instalación de software. Quisimos crear una solución diferente: una herramienta limpia, basada en la web, que funciona a la perfección en cualquier dispositivo sin comprometer la velocidad o la calidad.</p>
+            
+            <h2>Lo que Ofrecemos</h2>
+            <p><strong>- Descargas de Video Sin Marca de Agua:</strong> Guarda cualquier video de TikTok en su calidad original de alta definición, completamente libre de marcas de agua.</p>
+            <p><strong>- Conversión a MP3 de Alta Calidad:</strong> Extrae y descarga el audio de cualquier video de TikTok como un archivo MP3 nítido y claro.</p>
+            <p><strong>- Guardado Anónimo de Historias:</strong> Descarga historias de TikTok (tanto fotos como videos) sin notificar al creador.</p>
+            <p><strong>- Seguridad y Privacidad:</strong> Priorizamos tu seguridad. Nuestro servicio no requiere registro y nunca almacenamos tu historial de descargas o información personal.</p>
+
+            <h2>Nuestro Compromiso</h2>
+            <p>Estamos comprometidos a mantener TikElite gratuito y accesible para todos. Trabajamos continuamente para mejorar nuestro servicio, asegurando que se mantenga actualizado con los cambios de TikTok y proporcione una experiencia de usuario impecable. Gracias por elegir TikElite. Si tienes alguna pregunta, no dudes en ponerte en contacto a través de nuestra página de <a href="/es/pages/contact.html">Contacto</a>.</p>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <h3>Tu Herramienta Principal para Descargar de TikTok</h3>
+                <p>TikElite es un servicio en línea líder diseñado para descargar videos, historias y audio MP3 de TikTok sin marcas de agua. Nuestra plataforma es una de las mejores alternativas a servicios como ssstik, snaptik y tikwm, ofreciendo una experiencia superior, rápida y confiable. Ya sea que quieras guardar un clip divertido en tu galería, descargar una historia de TikTok antes de que desaparezca o convertir un sonido viral a MP3, nuestra herramienta proporciona descargas de la más alta calidad de forma gratuita. Estamos dedicados a mantener un servicio simple, seguro y accesible para todos los usuarios en cualquier dispositivo, incluyendo iPhone, Android y PC. Guarda tu contenido favorito de TikTok en HD sin esfuerzo con TikElite.</p>
+                <h3>Descargo de responsabilidad</h3>
+                <p>Este servicio no está afiliado con TikTok o ByteDance Ltd. Todos los derechos de contenido pertenecen a sus respectivos dueños. TikElite no aloja ningún contenido pirateado o con derechos de autor en sus servidores, y todos los videos descargados se procesan directamente desde los servidores de TikTok. Por favor, asegúrate de tener permiso del creador del contenido antes de distribuir su trabajo.</p>
+            </div>
+            <div class="footer-nav">
+                <a href="/es/pages/about.html">Sobre Nosotros</a>
+                <a href="/es/pages/privacy.html">Política de Privacidad</a>
+                <a href="/es/pages/contact.html">Contacto</a>
+            </div>
+            <p class="copyright">&copy; 2024 TikElite. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+    
+    <div id="periodic-ad-overlay" hidden><div class="ad-content-wrapper"><button class="close-ad-btn" id="close-periodic-ad" aria-label="Cerrar Anuncio">&times;</button><div class="ad-placeholder"><p>Publicidad</p></div></div></div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const themeToggle = document.getElementById('theme-toggle');
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        
+        menuToggle.addEventListener('click', () => { navLinks.classList.toggle('active'); document.body.classList.toggle('nav-open'); });
+        const applyTheme = (theme) => { document.documentElement.className = theme; themeToggle.checked = theme === 'dark'; };
+        const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        applyTheme(currentTheme);
+        themeToggle.addEventListener('change', () => { const newTheme = themeToggle.checked ? 'dark' : 'light'; localStorage.setItem('theme', newTheme); applyTheme(newTheme); });
+
+        const periodicAdOverlay = document.getElementById('periodic-ad-overlay');
+        const closePeriodicAdBtn = document.getElementById('close-periodic-ad');
+        if (periodicAdOverlay && closePeriodicAdBtn) {
+            const AD_INTERVAL = 20 * 60 * 1000;
+            const lastAdShown = localStorage.getItem('lastAdShownTimestamp');
+            const now = new Date().getTime();
+            if (!lastAdShown || (now - parseInt(lastAdShown, 10)) > AD_INTERVAL) {
+                setTimeout(() => { periodicAdOverlay.hidden = false; document.body.style.overflow = 'hidden'; localStorage.setItem('lastAdShownTimestamp', now.toString()); }, 1000);
+            }
+            closePeriodicAdBtn.addEventListener('click', () => { periodicAdOverlay.hidden = true; document.body.style.overflow = ''; });
+        }
+    });
+</script>
+</body>
+</html>

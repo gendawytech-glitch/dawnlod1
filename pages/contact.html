@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | TikElite</title>
+    <meta name="description" content="Get in touch with the TikElite team. We welcome your feedback, questions, and suggestions." />
+    <link rel="canonical" href="https://example.com/pages/contact.html" />
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzRmNDZlNTtzdG9wLW9wYWNpdHk6MSIgLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNhODU1ZjQ7c3RvcC1vcGFjaXR5OjEiIC8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIHJ4PSIyMCIgZmlsbD0idXJsKCNncmFkKSIvPjx0ZXh0IHg9IjUwIiB5PSI2OCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjUwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlRFPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+    
+    <!-- Hreflang Tags for SEO -->
+    <link rel="alternate" hreflang="x-default" href="https://example.com/pages/contact.html" />
+    <link rel="alternate" hreflang="en" href="https://example.com/pages/contact.html" />
+    <link rel="alternate" hreflang="ar" href="https://example.com/ar/pages/contact.html" />
+    <link rel="alternate" hreflang="es" href="https://example.com/es/pages/contact.html" />
+    <link rel="alternate" hreflang="fr" href="https://example.com/fr/pages/contact.html" />
+    <link rel="alternate" hreflang="de" href="https://example.com/de/pages/contact.html" />
+    <link rel="alternate" hreflang="pt" href="https://example.com/pt/pages/contact.html" />
+
+    <style>
+        :root { --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1); --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06); }
+        html.light { --bg-color: #f9fafb; --grad-1: #a8b2ff; --grad-2: #c6a8ff; --grad-3: #ffb3b8; --glass-bg: rgba(255, 255, 255, 0.4); --glass-border: rgba(255, 255, 255, 0.6); --card-bg: rgba(255, 255, 255, 0.85); --text-primary: #111827; --text-secondary: #4b5563; --accent-color: #4f46e5; --header-text: white; --fab-bg: white; --fab-text: #4b5563; }
+        html.dark { --bg-color: #0f172a; --grad-1: #1e293b; --grad-2: #334155; --grad-3: #475569; --glass-bg: rgba(30, 41, 59, 0.3); --glass-border: rgba(255, 255, 255, 0.1); --card-bg: rgba(30, 41, 59, 0.7); --text-primary: #f8fafc; --text-secondary: #cbd5e1; --accent-color: #6366f1; --header-text: white; --fab-bg: #1e293b; --fab-text: #e2e8f0; }
+        @keyframes fade-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes gradient-animation { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        body { margin: 0; font-family: var(--font-family); color: var(--text-primary); background-color: var(--bg-color); transition: color 0.3s, background-color 0.3s; padding: 1rem; padding-top: 80px; min-height: 100vh; box-sizing: border-box; }
+        body::before { content: ''; position: fixed; top: 0; left: 0; right: 0; height: 400px; z-index: -2; background-size: 400% 400%; transition: background 0.5s; }
+        html.light body::before { background: linear-gradient(-45deg, #4f46e5, #8b5cf6, #ec4899, #2563eb); animation: gradient-animation 15s ease infinite; }
+        html.dark body::before { background: linear-gradient(-45deg, var(--grad-1), var(--grad-2), var(--grad-3)); animation: gradient-animation 20s ease infinite; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .page-header { text-align: center; margin: 3rem 0; animation: fade-in 0.6s backwards; }
+        h1 { font-size: clamp(2.2rem, 6vw, 3.5rem); font-weight: 800; margin: 0 0 0.5rem 0; line-height: 1.2; }
+        .page-header p { color: var(--text-secondary); font-size: clamp(1rem, 3vw, 1.15rem); margin: 0 auto; max-width: 650px; line-height: 1.6; }
+        .sticky-header { position: fixed; top: 0; left: 0; right: 0; padding: 0 2rem; height: 70px; z-index: 1000; display: flex; align-items: center; justify-content: space-between; background: linear-gradient(135deg, #4f46e5, #a855f7); box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { font-size: 1.5rem; font-weight: 700; text-decoration: none; color: var(--header-text); }
+        .header-nav { display: flex; gap: 2rem; }
+        .header-nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-weight: 500; transition: color 0.2s; white-space: nowrap; }
+        .header-nav a:hover { color: white; }
+        .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; }
+        .menu-toggle .hamburger, .menu-toggle .hamburger::before, .menu-toggle .hamburger::after { display: block; width: 24px; height: 2px; background: white; position: relative; transition: all 0.3s; border-radius: 3px; }
+        .menu-toggle .hamburger::before, .menu-toggle .hamburger::after { content: ''; position: absolute; left: 0; }
+        .menu-toggle .hamburger::before { top: -8px; }
+        .menu-toggle .hamburger::after { bottom: -8px; }
+        body.nav-open .menu-toggle .hamburger { background: transparent; }
+        body.nav-open .menu-toggle .hamburger::before { transform: rotate(45deg) translate(5px, 6px); }
+        body.nav-open .menu-toggle .hamburger::after { transform: rotate(-45deg) translate(5px, -6px); }
+        @media (max-width: 640px) { .menu-toggle { display: block; margin-left: auto; } .header-nav { display: flex; position: absolute; top: 70px; left: 0; right: 0; background: var(--card-bg); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: var(--shadow-md); flex-direction: column; align-items: stretch; padding: 0; max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out, padding 0.4s ease-out; z-index: 999; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem; margin: 0 1rem; } .header-nav.active { max-height: 200px; padding: 0.5rem 0; } .header-nav a { font-size: 1.1rem; color: var(--text-primary); padding: 0.8rem 1.5rem; text-align: center; } .header-nav a:hover { background-color: var(--glass-bg); color: var(--text-primary); } }
+        .content-card { background: var(--card-bg); border: 1px solid var(--glass-border); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-radius: 1.5rem; padding: 2rem; box-shadow: var(--shadow-lg); animation: fade-in 0.5s; text-align: left; }
+        .content-card h2 { font-size: 1.8rem; margin-top: 0; text-align: center;}
+        .content-card p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem; text-align: center; }
+        .content-card a { color: var(--accent-color); text-decoration: none; font-weight: 500; }
+        .content-card a:hover { text-decoration: underline; }
+        footer { text-align: center; margin-top: 4rem; padding: 3rem 1rem 2rem 1rem; border-top: none; font-size: 0.9rem; background: linear-gradient(135deg, #4338ca, #7e22ce, #be185d); color: #e5e7eb; border-radius: 1.5rem 1.5rem 0 0; box-shadow: 0 -5px 15px rgba(0,0,0,0.1); }
+        .footer-nav { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+        .footer-nav a { color: #f9fafb; text-decoration: none; font-weight: 500; }
+        .footer-nav a:hover { color: white; text-decoration: underline; }
+        footer .copyright { color: #d1d5db; }
+        .fab-container { position: fixed; bottom: 1.5rem; right: 1.5rem; display: flex; flex-direction: column; gap: 1rem; z-index: 1001; }
+        .fab { width: 56px; height: 56px; border-radius: 50%; border: none; background-color: var(--fab-bg); color: var(--fab-text); box-shadow: var(--shadow-md); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s var(--ease-out-quart); }
+        .fab:hover { transform: scale(1.1) rotate(15deg); box-shadow: var(--shadow-lg); }
+        #scroll-to-top-fab.fab-hidden { transform: translateY(20px); opacity: 0; visibility: hidden; pointer-events: none; }
+        .dark #sun-icon-fab { display: none; } .light #moon-icon-fab { display: none; }
+    </style>
+</head>
+<body class="">
+    <header class="sticky-header">
+        <a href="/" class="logo">TikElite</a>
+        <nav class="header-nav" id="header-nav">
+            <a href="/download/stories.html">Download TikTok Stories</a>
+            <a href="/download/mp3.html">Download TikTok MP3</a>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu">
+            <span class="hamburger"></span>
+        </button>
+    </header>
+    
+    <div class="container">
+        <header class="page-header">
+            <h1>Contact Us</h1>
+            <p>Have a question, suggestion, or a bug to report? We'd love to hear from you!</p>
+        </header>
+
+        <main class="content-card">
+            <h2>Get in Touch</h2>
+            <p>The best way to reach us is by email. We do our best to respond to all inquiries within 48 hours.</p>
+            <p style="font-size: 1.2rem; font-weight: 500;">
+                <a href="mailto:support@example.com">support@example.com</a>
+            </p>
+            <p>When you get in touch, please be as detailed as possible so we can better assist you. If you are reporting an issue with a specific TikTok link, please include the link in your message.</p>
+        </main>
+
+        <footer>
+            <div class="footer-nav">
+                <a href="/pages/about.html">About Us</a>
+                <a href="/pages/privacy.html">Privacy Policy</a>
+                <a href="/pages/contact.html">Contact Us</a>
+            </div>
+            <p class="copyright">&copy; 2024 TikElite. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <!-- Floating Action Buttons -->
+    <div class="fab-container">
+        <button id="theme-toggle-fab" class="fab" title="Toggle Theme" aria-label="Toggle Theme">
+            <svg id="sun-icon-fab" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg id="moon-icon-fab" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button id="scroll-to-top-fab" class="fab fab-hidden" title="Scroll to Top" aria-label="Scroll to Top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        </button>
+    </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const themeToggleFab = document.getElementById('theme-toggle-fab');
+        const scrollToTopFab = document.getElementById('scroll-to-top-fab');
+        const menuToggle = document.getElementById('menu-toggle');
+        const headerNav = document.getElementById('header-nav');
+
+        menuToggle.addEventListener('click', () => {
+            headerNav.classList.toggle('active');
+            document.body.classList.toggle('nav-open');
+        });
+        
+        const applyTheme = (theme) => document.documentElement.className = theme;
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        let currentTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+        applyTheme(currentTheme);
+        themeToggleFab.addEventListener('click', () => {
+            currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            localStorage.setItem('theme', currentTheme);
+            applyTheme(currentTheme);
+        });
+
+        window.addEventListener('scroll', () => {
+            scrollToTopFab.classList.toggle('fab-hidden', window.scrollY <= 300);
+        });
+        scrollToTopFab.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    });
+</script>
+</body>
+</html>

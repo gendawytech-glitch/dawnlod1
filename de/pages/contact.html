@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de" class="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt | TikElite</title>
+    <meta name="description" content="Nehmen Sie Kontakt mit dem TikElite-Team auf. Wir freuen uns über Ihr Feedback, Ihre Fragen und Vorschläge." />
+    <link rel="canonical" href="https://example.com/de/pages/contact.html" />
+    
+    <link rel="alternate" hreflang="x-default" href="https://example.com/pages/contact.html" />
+    <link rel="alternate" hreflang="en" href="https://example.com/pages/contact.html" />
+    <link rel="alternate" hreflang="ar" href="https://example.com/ar/pages/contact.html" />
+    <link rel="alternate" hreflang="es" href="https://example.com/es/pages/contact.html" />
+    <link rel="alternate" hreflang="fr" href="https://example.com/fr/pages/contact.html" />
+    <link rel="alternate" hreflang="de" href="https://example.com/de/pages/contact.html" />
+    <link rel="alternate" hreflang="pt" href="https://example.com/pt/pages/contact.html" />
+    <link rel="alternate" hreflang="ru" href="https://example.com/ru/pages/contact.html" />
+    <link rel="alternate" hreflang="hi" href="https://example.com/hi/pages/contact.html" />
+    <link rel="alternate" hreflang="ja" href="https://example.com/ja/pages/contact.html" />
+    <link rel="alternate" hreflang="zh" href="https://example.com/zh/pages/contact.html" />
+    <link rel="alternate" hreflang="ko" href="https://example.com/ko/pages/contact.html" />
+
+    <style>
+        :root { --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); }
+        html.light { --bg-color: #f9fafb; --grad-1: #a8b2ff; --grad-2: #c6a8ff; --grad-3: #ffb3b8; --card-bg: rgba(255, 255, 255, 0.65); --text-primary: #111827; --text-secondary: #4b5563; --accent-color: #4f46e5; --header-text: white; }
+        html.dark { --bg-color: #0f172a; --grad-1: #1e293b; --grad-2: #334155; --grad-3: #475569; --card-bg: rgba(30, 41, 59, 0.5); --text-primary: #f8fafc; --text-secondary: #cbd5e1; --accent-color: #6366f1; --header-text: white; }
+        @keyframes fade-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes gradient-animation { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        body { margin: 0; font-family: var(--font-family); color: var(--text-primary); background-color: var(--bg-color); padding: 1rem; padding-top: 80px; min-height: 100vh; box-sizing: border-box; }
+        body::before { content: ''; position: fixed; top: 0; left: 0; right: 0; height: 400px; z-index: -2; background: linear-gradient(-45deg, var(--grad-1), var(--grad-2), var(--grad-3)); background-size: 400% 400%; animation: gradient-animation 20s ease infinite; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .page-header { text-align: center; margin: 3rem 0; animation: fade-in 0.6s backwards; }
+        h1 { font-size: clamp(2.2rem, 6vw, 3.5rem); font-weight: 800; margin: 0 0 0.5rem 0; line-height: 1.2; }
+        .page-header p { color: var(--text-secondary); font-size: clamp(1rem, 3vw, 1.15rem); margin: 0 auto; max-width: 650px; line-height: 1.6; }
+        .sticky-header { position: fixed; top: 0; left: 0; right: 0; padding: 0 1rem; height: 70px; z-index: 1000; display: flex; align-items: center; justify-content: space-between; background: linear-gradient(135deg, #4f46e5, #a855f7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { font-size: 1.5rem; font-weight: 700; text-decoration: none; color: var(--header-text); }
+        .nav-links a { text-decoration: none; color: rgba(255,255,255,0.8); font-weight: 500; }
+        #theme-toggle + label { cursor: pointer; font-size: 1.5rem; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: rgba(255,255,255,0.8); }
+        .dark #sun-icon { display: none; } .light #moon-icon { display: none; }
+        .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; }
+        .menu-toggle .hamburger::before, .menu-toggle .hamburger::after { content: ''; position: absolute; left: 0; width: 24px; height: 2px; background: white; }
+        .content-card { background: var(--card-bg); border: 1px solid var(--glass-border, rgba(255, 255, 255, 0.6)); backdrop-filter: blur(16px); border-radius: 1.5rem; padding: 2rem; box-shadow: var(--shadow-lg); animation: fade-in 0.5s; text-align: center; }
+        .content-card h2 { font-size: 1.8rem; margin-top: 0; }
+        .content-card p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem; }
+        .content-card a { color: var(--accent-color); text-decoration: none; font-weight: 500; }
+        footer { text-align: center; margin-top: 4rem; padding: 3rem 1rem 2rem 1rem; font-size: 0.9rem; background: linear-gradient(135deg, #4338ca, #7e22ce, #be185d); color: #e5e7eb; border-radius: 1.5rem 1.5rem 0 0; box-shadow: 0 -5px 15px rgba(0,0,0,0.1); }
+        .footer-content { max-width: 900px; margin: 0 auto 2rem auto; text-align: left; line-height: 1.7; color: #d1d5db; }
+        .footer-nav a { color: #f9fafb; text-decoration: none; font-weight: 500; }
+        .close-ad-btn { position: absolute; top: -15px; right: -15px; width: 40px; height: 40px; border-radius: 50%; border: none; background: white; color: #333; font-size: 2rem; font-weight: bold; cursor: pointer; line-height: 40px; text-align: center; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 10001; }
+        [hidden] { display: none !important; }
+        @media (max-width: 768px) { .menu-toggle { display: block; } .nav-links { position: fixed; top: 70px; right: 0; width: 250px; height: calc(100vh - 70px); background: #39339a; flex-direction: column; align-items: flex-start; padding: 1.5rem; transform: translateX(100%); transition: transform 0.3s ease-in-out; gap: 1rem; } .nav-links.active { transform: translateX(0); } }
+    </style>
+</head>
+<body class="">
+    <header class="sticky-header">
+        <a href="/de/" class="logo">TikElite</a>
+        <div class="nav-container" style="display:flex; align-items:center; gap:1rem;">
+            <nav class="nav-links" id="nav-links" style="display:flex; align-items:center; gap:1.5rem;">
+                <a href="/de/download/stories.html">TikTok Stories Herunterladen</a>
+                <a href="/de/download/mp3.html">TikTok MP3 Herunterladen</a>
+            </nav>
+            <div class="theme-switcher" style="position:relative;">
+                <input type="checkbox" id="theme-toggle" style="display:none;" aria-label="Thema wechseln">
+                <label for="theme-toggle" title="Thema wechseln"><svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg><svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></label>
+            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menü öffnen"><span class="hamburger" style="display:block; width:24px; height:2px; background:white; position:relative;"></span></button>
+        </div>
+    </header>
+    
+    <div class="container">
+        <header class="page-header">
+            <h1>Kontakt</h1>
+            <p>Haben Sie eine Frage, einen Vorschlag oder einen Fehler zu melden? Wir würden uns freuen, von Ihnen zu hören!</p>
+        </header>
+
+        <main class="content-card">
+            <h2>Nehmen Sie Kontakt auf</h2>
+            <p>Der beste Weg, uns zu erreichen, ist per E-Mail. Wir bemühen uns, alle Anfragen innerhalb von 48 Stunden zu beantworten.</p>
+            <p style="font-size: 1.2rem; font-weight: 500;">
+                <a href="mailto:support@example.com">support@example.com</a>
+            </p>
+            <p>Wenn Sie uns kontaktieren, seien Sie bitte so detailliert wie möglich, damit wir Ihnen besser helfen können. Wenn Sie ein Problem mit einem bestimmten TikTok-Link melden, fügen Sie den Link bitte Ihrer Nachricht bei.</p>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <h3>Ihr führendes Tool zum Herunterladen von TikTok-Inhalten</h3>
+                <p>TikElite ist ein führender Online-Dienst zum Herunterladen von TikTok-Videos, -Stories und -MP3-Audio ohne Wasserzeichen. Unsere Plattform ist eine erstklassige Alternative zu Diensten wie ssstik, snaptik und tikwm und bietet eine überlegene, schnelle und zuverlässige Erfahrung. Egal, ob Sie einen lustigen Clip in Ihrer Galerie speichern, eine TikTok-Story herunterladen möchten, bevor sie verschwindet, oder einen viralen Sound in MP3 konvertieren möchten, unser Tool bietet kostenlos die hochwertigsten Downloads. Wir sind bestrebt, einen einfachen, sicheren und zugänglichen Dienst für alle Benutzer auf jedem Gerät, einschließlich iPhone, Android und PC, zu gewährleisten. Speichern Sie Ihre Lieblings-TikTok-Inhalte mühelos in HD mit TikElite.</p>
+                <h3>Haftungsausschluss</h3>
+                <p>Dieser Dienst ist nicht mit TikTok oder ByteDance Ltd. verbunden. Alle Inhaltsrechte gehören ihren jeweiligen Eigentümern. TikElite hostet keine raubkopierten oder urheberrechtlich geschützten Inhalte auf seinen Servern, und alle heruntergeladenen Videos werden direkt von den Servern von TikTok verarbeitet. Bitte stellen Sie sicher, dass Sie die Erlaubnis des Inhaltserstellers haben, bevor Sie dessen Arbeit verbreiten.</p>
+            </div>
+            <div class="footer-nav" style="display:flex; justify-content:center; gap:1.5rem; margin-bottom:1rem;">
+                <a href="/de/pages/about.html">Über uns</a>
+                <a href="/de/pages/privacy.html">Datenschutzrichtlinie</a>
+                <a href="/de/pages/contact.html">Kontakt</a>
+            </div>
+            <p class="copyright">&copy; 2024 TikElite. Alle Rechte vorbehalten.</p>
+        </footer>
+    </div>
+    
+    <div id="periodic-ad-overlay" hidden><div class="ad-content-wrapper" style="position:relative; width:90%; max-width:800px; height:80%; max-height:600px;"><button class="close-ad-btn" id="close-periodic-ad" aria-label="Werbung schließen">&times;</button><div class="ad-placeholder" style="width:100%; height:100%; background:#2d3748; display:flex; align-items:center; justify-content:center; color:#a0aec0; font-size:1.5rem; border-radius:8px;"><p>Werbung</p></div></div></div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const themeToggle = document.getElementById('theme-toggle');
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        
+        menuToggle.addEventListener('click', () => { navLinks.classList.toggle('active'); document.body.classList.toggle('nav-open'); });
+        const applyTheme = (theme) => { document.documentElement.className = theme; themeToggle.checked = theme === 'dark'; };
+        const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        applyTheme(currentTheme);
+        themeToggle.addEventListener('change', () => { const newTheme = themeToggle.checked ? 'dark' : 'light'; localStorage.setItem('theme', newTheme); applyTheme(newTheme); });
+
+        const periodicAdOverlay = document.getElementById('periodic-ad-overlay');
+        const closePeriodicAdBtn = document.getElementById('close-periodic-ad');
+        if (periodicAdOverlay && closePeriodicAdBtn) {
+            const AD_INTERVAL = 20 * 60 * 1000;
+            const lastAdShown = localStorage.getItem('lastAdShownTimestamp');
+            const now = new Date().getTime();
+            if (!lastAdShown || (now - parseInt(lastAdShown, 10)) > AD_INTERVAL) {
+                setTimeout(() => { periodicAdOverlay.hidden = false; document.body.style.overflow = 'hidden'; localStorage.setItem('lastAdShownTimestamp', now.toString()); }, 1000);
+            }
+            closePeriodicAdBtn.addEventListener('click', () => { periodicAdOverlay.hidden = true; document.body.style.overflow = ''; });
+        }
+    });
+</script>
+</body>
+</html>
